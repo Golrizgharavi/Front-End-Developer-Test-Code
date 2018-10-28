@@ -1,0 +1,132 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <link href="/Styles/Main-rtl.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="/Skins/Red/Main.css" rel="stylesheet" type="text/css" />
+    <script  type="text/javascript"  src="/Scripts/Ajax.js"></script>
+
+
+</head>
+<body onload="loadJSON()">
+        
+        <div id="wrapper">
+            <div id="header">
+                 <div id="languageBar">
+                    <div class="wide">
+                        <ul id="languageBarFlag">
+                      
+                                <li><i class="icon" style=" background-image:url(/Images/Flags/middleFlag.jpg);"></i></li>
+                                <li><i class="icon" style=" background-image:url(/Images/Flags/iranFlag.jpg);"></i></li>
+                        </ul>
+
+                        <ul id="languageBarMnu">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                       
+                        </ul>
+                
+                </div>
+            </div>
+
+             <div id="mainNav">
+                <div class="wide">
+                    <span class="searchBox"><span class="searchBtn "><span class="sp-002 sx-002005 "><input type="button" value="Advanced Search" class=" btnTxt" /><input type="button" class="sp-001 sx-001026 btnIcon"  /></span></span><span class="searchText"><input type="text" class="sp-002 sx-002004 searchTextInner" value="search..." /></span></span>
+
+                        <ul id="mainNavMnu">
+                            <li><a href="#"><span><b>Tablet</b></span></a></li>
+                             <li><a href="#"><span><b>Phone</b></span></a></li>
+                             <li><a href="#"><span><b>News</b></span></a></li>
+                             <li><a href="#"><span><b>Encouraging Notes</b></span></a></li>
+                        </ul>
+                
+                </div>
+            </div>
+
+            <div id="advertisement">
+                <div class="wide">
+                    <img src="/Images/advertizementPic.jpg" alt="" />
+                </div>
+            </div>
+
+            </div>
+
+
+            <div id="container">
+                 <div class="wide" >
+                    <div id="leftCol">
+                        <ul>
+                            <li><img src="/Images/advertisementColPics/001.jpg" alt="" /></li>
+                            <li><img src="/Images/advertisementColPics/002.jpg" alt="" /></li>
+                            <li><img src="/Images/advertisementColPics/003.jpg" alt="" /></li>
+                            <li><img src="/Images/advertisementColPics/004.jpg" alt="" /></li>
+                            <li><img src="/Images/advertisementColPics/005.jpg" alt="" /></li>
+                            <li><img src="/Images/advertisementColPics/006.jpg" alt="" /></li>
+                        </ul>
+            
+            
+            
+                   </div>
+                <div id="globalCol" class="clearfix"><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></div>  
+            </div>
+            
+            </div>
+
+
+
+            <div id="footer">
+                <div id="footerTop"><div class="wide"></div></div>
+                <div id="footerMiddle">
+                    <div class="wide">
+               
+                        <h1 class="contentTitle"><b class="skinColor">Inspring Notes</b></h1>
+                        <div class="EncouragingNotesHoler">
+                            <marquee direction="up" width="50%" height="285" behaviour="scroll" onMouseOver="this.stop()" onMouseOut="this.start()">
+                            <ul id="EncouragingNoteRowHolderUL">
+                               
+
+                            </ul>
+                        </marquee>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="footerDown">
+                    <div class="wide">
+                        <div id="logoBottom">
+                     
+                            <b>copyright @ 2012-2018 micreez.com</b>
+                        
+                        </div>
+                    
+                    <ul>
+                          <li><a href="#">Technical Support</a></li>
+                          <li><a href="#">Phones</a></li>
+                          <li><a href="#">Policy</a></li>
+                          <li><a href="#">Map</a></li>
+                         
+                    </ul>
+                </div>
+            </div>
+
+
+
+            </div>
+
+        
+        </div>
+   
+
+      <script src="/Scripts/JScript.js" type="text/javascript" language="javascript"></script>
+    <script src="/Scripts/DetailsSearchPrt.js" type="text/javascript" language="javascript"></script>
+    
+</body>
+</html>
